@@ -1,0 +1,65 @@
+img {
+	margin-left: 30px;
+}
+
+.sun-wrapper {
+	height: 530px;
+	width: 410px;
+	overflow: hidden;
+	transition: background 4s ease-in-out;
+	background-color: black;
+	margin: auto;
+	border: 10px solid black;
+}
+
+.sun-wrapper:hover {
+	background-color: transparent blue;
+}
+
+.sun-wrapper:hover .sun {
+	background-color: white;
+	transform: translateY(600px);
+	z-index: 5;
+}
+
+.sun {
+	width: 500px;
+	height: 550px;
+	background-color: white;
+	border-radius: 1px;
+	transition-property: background-color, transform; 
+	transition-duration: 8s, 8s;
+	transition-timing-function: ease-in-out;
+	z-index: 5;
+	margin-top: -540px;
+}
+
+
+
+@keyframes riseandset {
+	from {
+		transform: translateY(600px);
+	}
+
+	to {
+		transform: translateY(-600px);
+		background-color: blue;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
